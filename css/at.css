@@ -1,0 +1,66 @@
+﻿@charset "utf-8";
+
+.at-container {
+	position: relative;
+	border: 1px solid #ccc;
+}
+
+.at-text,
+.at-text-shadow {
+	font-family: Arial,"ו";
+	font-size: 14px;
+	line-height: 1.25;
+	height: 84px;
+	width: 100%;
+	border: 0;
+	padding: 2px;
+	word-break: break-all;
+	resize: none;
+}
+
+.at-text-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	*margin-top: 1px;
+	opacity: 0;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.at-box {
+	position: absolute;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	box-shadow: 0 0 5px;
+	z-index: 100;
+	max-width: 250px;
+	overflow: hidden;
+	font-size: 12px;
+	
+}
+
+.at-box li {
+	padding: 5px 8px;
+}
+
+.at-box li.at-option-row {
+	cursor: pointer;
+}
+
+.at-box li.at-option-row.hover {
+	background-color: #D2E9FA;
+}
+ 
+.at-box li.at-option-title {
+	cursor: default;
+	background-color: #ccc;
+}
+
+.at-box li + li {
+	border-top: 1px dashed #ddd;
+}
+
+.red {
+	color: #f00;
+}
